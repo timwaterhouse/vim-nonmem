@@ -33,10 +33,10 @@ function NonmemGetIndent(lnum)
   " Strip tail comment
   let prevstat=substitute(prevline, ';.*$', '', '')
 
-  "Indent most lines by at least sw
-  if ind == 0
-    let ind = &sw
-  endif
+  ""Indent most lines by at least sw
+  "if ind == 0
+  "  let ind = &sw
+  "endif
 
   "Add a shiftwidth to statements following if, else, else if, case,
   "where, else where, forall, type, interface and associate statements
